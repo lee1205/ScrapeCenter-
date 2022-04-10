@@ -21,7 +21,7 @@ class Ssr1:
             item['封面'] = i.xpath('div[1]/div[1]/div[1]/a/img/@src')[0]
             item['标签'] = i.xpath('div[1]/div[1]/div[2]/div[1]/button/span/text()')[0]
             item['信息'] = i.xpath('div[1]/div[1]/div[2]/div[2]/span/text()')[0]
-            item['年份'] = i.xpath('div[1]/div[1]/div[2]/div[3]/span/text()')[0]
+#             item['年份'] = e.xpath('//*[@id="index"]/div[1]/div[1]/div/div[1]/div[1]/div[2]/div[3]/span/text()')[0] ps:第一页楚门的世界缺失
             item['评分'] = i.xpath('div[1]/div[1]/div[3]/p[1]/text()')[0]
             print(item)
 
