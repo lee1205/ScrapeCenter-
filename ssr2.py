@@ -3,7 +3,7 @@ from lxml import etree
 from queue import Queue
 import urllib3
 
-class Ssr1:
+class Ssr2:
     def __init__(self, url_que):
         self.url = url_que
 
@@ -34,6 +34,6 @@ if __name__ == '__main__':
     for i in range(1, 11):
         url = base_url.format(i)
         url_que.put(url)
-    ssr = Ssr1(url_que)
+    ssr = Ssr2(url_que)
     ssr.run()
 
